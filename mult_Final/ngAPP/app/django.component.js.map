@@ -1,0 +1,1 @@
+{"version":3,"file":"django.component.js","sourceRoot":"","sources":["django.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAAwC;AAIxC;IAHA;QAIE,eAAU,GAAG,wDAAwD,CAAC;IAExE,CAAC;IAHY,eAAe;QAH3B,gBAAS,CAAC;YACT,WAAW,EAAE,gBAAgB;SAC9B,CAAC;OACW,eAAe,CAG3B;IAAD,sBAAC;CAAA,AAHD,IAGC;AAHY,0CAAe"}
