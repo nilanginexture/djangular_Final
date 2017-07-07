@@ -29,7 +29,7 @@ SECRET_KEY = 'clhx+b9cd$#^p9__poygxmu#qr3amv-@myd)^ii944a!nf)e(o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.multidemo.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -139,11 +139,11 @@ WSGI_APPLICATION = 'mult_Final.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'tenant_schemas.postgresql_backend',
-        'NAME': 'db',
-        'USER': 'msdream',
-        'PASSWORD': 'angdj',                  # Not used with sqlite3.
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',                  # Not used with sqlite3.
         # Set to empty string for localhost. Not used with sqlite3.
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
