@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./mult_Final/database:/database
+  web:
+    build: .
+    container_name: web
+    command: python /djangularfinal/mult_Final/manage.py migrate_schemas
+    command: python /djangularfinal/mult_Final/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./mult_Final:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+
