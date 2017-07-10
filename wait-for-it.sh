@@ -1,3 +1,6 @@
+#!/bin/bash
+# wait-for-postgres.sh
+
 set -e
 
 host="$1"
@@ -9,3 +12,4 @@ until ping -c 5 $host; do
 	sleep 1  
 	done;
 exec $cmd
+
